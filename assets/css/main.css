@@ -1238,11 +1238,12 @@ input[type="radio"] + label:before {
     .image.fit img {
       width: 100%; }
   .image.main {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 0 0 3em 0;
     width: 100%; }
     .image.main img {
-      width: 100%; }
+      width: 50%; }
 
 a.image {
   overflow: hidden; }
@@ -2148,7 +2149,7 @@ button,
       -webkit-object-position: center;
       -ms-object-position: center;
       object-position: center;
-      width: 100%; }
+      width: 75%; }
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
