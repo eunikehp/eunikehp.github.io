@@ -36,53 +36,63 @@
 										<h1>Covid-19 Analysis</h1>
 									</header>
 
-									<span class="Covid-19 Dashboard"><img src="images/covid19.jpg" alt="" /></span>
+									<span class="Covid-19 Dashboard"><img src="images/covid192.png" alt="" /></span>
 
-										<h1>Project Summary</h1>
-									<p>The purpose of this project was to find out how was the spread of COVID-19 cases around the world. 
-										This included the death cases and total vaccinations. 
-										The dataset used for this analysis is COVID-19 Deaths data which taken from <a href="https://ourworldindata.org/covid-deaths"><b>Our World in Data</b></a>. 
-										It contains information regarding numbers of COVID cases, deaths, and how many people were getting vaccine from Jan 8, 2020 to Apr 30, 2021.
+										<h2>Project Summary</h2>
+									<p>The purpose of this project was to find out how was the spread of COVID-19 cases around the world for the period Jan 8, 2020 until Apr 30, 2021. 
+										This included the trends of the death cases and total vaccinations. 
+										The dataset used for the analysis is COVID-19 Deaths data which taken from <a href="https://ourworldindata.org/covid-deaths"><b>Our World in Data</b></a>. 
+										It contains information regarding numbers of COVID cases, deaths, and total of people who got the vaccine.</p>
 									
-		
-									<h2>The tools:</h2>
+										<hr class="major" />
+										<h2>Project Background</h2>
+										<p>The novel coronavirus, known as COVID-19, was first identified in Wuhan, China towards the end of 2019. Later on, on March 13, 2020, the World Health Organization (WHO) declared it a global pandemic. Following this announcement, the number of confirmed cases and deaths rose significantly in developed countries like the US, UK, and China, which will be closely examined in this analysis.</p>
+										
+										
+										<hr class="major" />
+									<h3>The tools:</h3>
 									<p><ul>
 										<li>Microsoft SQL Server Management Studio (SMSS)</li>
 										<li>Tableau</li>
 									</ul></p>
 
-
-									<h2>The steps:</h2>
+									<h3>The steps:</h3>
 									<p>
-										<ul>
-											<li>Source data (CSV from website)</li>
-											<li>Merge dataset using SQL Server</li>
-											<li>Connect to cleaned CSV using Tableau</li>
-											<li>Create dashboard to visualized data </li>
-										</ul>
+										<ol>
+											<li>First, I downloaded the CSV files from the website.</li>
+											<li>Using the SQL Server, those 2 raw dataset were merged and cleaned to make sure the data is feasible to be analyzed.</li>
+											<li>Explored the data and chose the information that will be utilized for vizualization. </li>
+											<li>Created VIEW and exported the saved VIEW into cleaned CSV file.</li>
+											<li>Connected to cleaned CSV using Tableau</li>
+											<li>Created dashboard on Tableau to visualize the result. </li>
+										</ol>
 										 </p>
-</p>
+
 
 									<hr class="major" />
 									
-									<h1>Project Background</h1>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+									<h2>Project Files</h2>
+									<p>For more comprehensive analysis and visualization, please open these files: </p>
+									<p><ul>
+										<li><a href="https://github.com/eunikehp/COVIDanalysis/blob/main/SQLQueryCovid.sql">SQL - Analysis</span></a></li>
+										<li><a href="https://public.tableau.com/app/profile/eunikepardede/viz/shared/23GRK28CR">Tableau Dashboard</span></a></li>
+									</ul>
+								</p>
+
+								<hr class="major" />
+										<h2>Insights</h2>
+										<p>According to the analysis, I identified that:</p>
+										<p><ol>
+											<li>During this period, total cases had reached around 150M until April 2021.</li>
+											<li>In terms of the distribution of COVID19 cases, US had the most new cases among other countries with around 32 million cases, followed by India and Brazil.  </li>
+											<li>However, it is found that Europe had the most death cases related COVID19. It is followed by North America and South America.</li>
+											<li>Regarding the vaccination, there were 946 million people had been vaccinated during this period. From February 2021, there were significant increase of new vaccination in Asia. In April 2021, about 257 million vaccinations held in this continent. </li>
+										</ol>
+									</p>
+										
+										<hr class="major" />
 									
-									<hr class="major" />
-									
-									<h1>Data Scope, Goals & Objectives</h1>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									
-										<h3>Goals</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-										 
-										<h3>Objectives</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									
+								
 								</section>
 
 						</div>
@@ -105,8 +115,8 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="aboutme.html">About Me</a></li>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="aboutme.html">About</a></li>
 										<li><a href="projects.html">Projects</a></li>
 										<li><a href="elements.html">Elements</a></li>
 										<!--<li>
