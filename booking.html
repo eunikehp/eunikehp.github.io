@@ -36,12 +36,15 @@
 										<h1>Hotel Booking Demand</h1>
 									</header>
 
-									<span class="Dashboard"><img src="images/pic02.jpg" alt="" /></span>
+									<span class="Dashboard"><img src="images/hotel.jpeg" width="400" height="210" alt="" /></span>
 
 										<h2>Project Summary</h2>
-									<p>The aim of this project is to find out the was about an analysis of 2 Hotels: Resort Hotel and City Hotel. 
-										The aim was to do analysis and answer some business questions. Dataset was taken from <a href="https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand"><b>Kaggle</b></a>.
-										
+									<p>This project is an analysis of 2 Hotels, named Resort Hotel and City Hotel, regarding their bookings and 
+										their guests to get some insights and understand about their business. The analysis starts with cleaning the data 
+										and then we do exploratory data analysis (EDA) to answer several business questions. 
+										For this project, the dataset was derived from <a href="https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand"><b>Kaggle</b></a>.
+										The details of this projects are written below.
+
 										<h3>The tools:</h3>
 									<p>
 										<ul>
@@ -52,19 +55,18 @@
 
 										<h2>The steps:</h2>
 										<ul>
-											<li>Data cleaning</li>
-											<li>Perform Exploratory Data Analysis (EDA) for examining following research questions:</li>
-										<ol>
-										<li>How many bookings were canceled?</li>
-										<li>Where are guests mostly coming from?</li>
-										<li>What months are mostly busy?</li>
-										<li>Which month have the highest number of cancelations?</li>
-										<li>Bookings by market segment?</li>
-										<li>How long do guests stay at the hotels?</li>
-										<li>How much do guests pay a room per night?</li>
-										<li>How does the price vary per night over the year?</li>
-										</ol>
-											<li>Create graphs </li>
+											<li>I did the data cleaning from raw data using Python and make sure the data is feasible to be analyzed. </li>
+											<li>Performed Exploratory Data Analysis (EDA) using SQL lite and for examining following research questions:</li>
+												<ol>
+												<li>How many bookings were canceled?</li>
+												<li>Where are guests mostly coming from?</li>
+												<li>What months are mostly busy?</li>
+												<li>Which month have the highest number of cancelations?</li>
+												<li>Bookings by market segment?</li>
+												<li>How long do guests stay at the hotels?</li>
+												<li>How much do guests pay a room per night?</li>
+												<li>How does the price vary per night over the year?</li></ol>
+											<li>Created visualization using Matplotlib library and Seaborn. </li>
 										</ul>
 										 </p>
 
@@ -72,10 +74,9 @@
 									<hr class="major" />
 
 									<h2>Project Files</h2>
-									<p>For more comprehensive analysis and visualization, please open these files </p>
+									<p>For more comprehensive analysis and visualization, please open this file: </p>
 									<p><ul>
-										<li><a href="https://github.com/eunikehp/Hotel_Booking/blob/main/Hotel%20Booking.ipynb">Jupiter notebook - Analysis</span></a></li>
-										</p>
+										<li><a href="https://github.com/eunikehp/Hotel_Booking/blob/main/Hotel%20Booking.ipynb">Jupiter Notebook - Analysis</span></a></li></p>
 
 									<hr class="major" />
 									
@@ -83,7 +84,7 @@
 									<p>
 										<ol>
 											<li>First, I replaced all null values and categorized them into '0' or 'Unknown'.</li>
-											<li>Replaced 'Undefined' from meal column into 'SC', as they have same meaning. </li>
+											<li>Replaced 'Undefined' from meal column into 'SC', as they have the same meaning. </li>
 											<li>Dropped some rows that have zero guest on adults column, including children and babies.   </li>
 										</ol></p>
 									
@@ -91,40 +92,41 @@
 									
 									<h2>Data Analysis</h2>
 									
-										<h3>How many bookings were canceled?</h3>
+										<h3>1. How many bookings were canceled?</h3>
 										<span class="Dashboard"><img src="images/1.png" alt="" /></span>
-										<p><b>Interpretation:</b> </p>
+										<p><b>Interpretation:</b> The number of booking cancellation at City Hotel was 33,079 cancellations, 
+											while Resort Hotel were 11,120 cancellations. </p>
 
-										<h3>Where are guests mostly coming from?</h3>
+										<h3>2. Where are guests mostly coming from?</h3>
 										<span class="Dashboard"><img src="images/2.png" alt="" /></span>
-										<p><b>Interpretation:</b> </p>
+										<p><b>Interpretation:</b> Mostly, hotel guests came from Portugal (20,977), United of Kingdom (9,668), and France (8,468) </p>
 
-										<h3>What months are mostly busy?</h3>
-										<span class="Dashboard"><img src="images/3.png" alt="" /></span>
-										<p><b>Interpretation:</b> </p>
+										<h3>3. What months are mostly busy?</h3>
+										<span class="Dashboard"><img src="images/lineplot.png" alt="" /></span>
+										<p><b>Interpretation:</b> August (with 8,624 bookings) is the most busiest month during the year. Following by July (7,907) and May (7,103)</p>
 
-										<h3>Which month have the highest number of cancelations?</h3>
-										
-										<p><b>Interpretation:</b> </p>
+										<h3>4. Which month have the highest number of cancellations?</h3>
+										<span class="Dashboard"><img src="images/6.png" alt="" /></span>
+										<p><b>Interpretation:</b> August has the highest number of cancellations.</p>
 
-										<h3>Bookings by market segment?</h3>
+										<h3>5. Bookings by market segment?</h3>
 										<span class="Dashboard"><img src="images/4.png" alt="" /></span>
-										<p><b>Interpretation:</b> </p>
+										<p><b>Interpretation:</b> The bookings were mostly coming from Online Travel Agents (47%)  </p>
 
-										<h3>How long do guests stay at the hotels?</h3>
-										<span class="Dashboard"><img src="images/5.png" alt="" /></span>
-										<p><b>Interpretation:</b> </p>
+										<h3>6. How long do guests stay at the hotels?</h3>
+										<span class="Dashboard"><img src="images/7.png" alt="" /></span>
+										<!---<p><b>Interpretation:</b> </p>
 
-										<h3>How much do guests pay a room per night?</h3>
+										<h3>7. How much do guests pay a room per night?</h3>
 										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 										
-										<h3>How does the price vary per night over the year?</h3>
+										<h3>8. How does the price vary per night over the year?</h3>
 										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 										
 									<h2>Conclusion</h2>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 									
-										
+										--->
 										
 										
 										
